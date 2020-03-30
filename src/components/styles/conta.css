@@ -1,0 +1,88 @@
+@font-face{
+    font-family: f;
+    src: url(../fonts/snr.ttf);
+}
+/*Atributos para el texto principal*/
+.contacto{
+
+    font-size: 17px;
+    font-family: f;
+    flex: 100%;
+    display: flex;  
+    margin: 1rem 1rem 4rem;
+    -webkit-box-shadow: -1px 1px 14px -1px rgba(255, 0, 0, 0.2);
+    -moz-box-shadow: -1px 1px 14px -1px rgba(231, 12, 12, 0.2);
+    box-shadow: -1px 1px 14px -1px rgba(231, 12, 12, 0.2);
+    
+}
+/*Dimensiones para los iconos*/
+.corr{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.corr p{
+    margin-left: 5px;
+}
+#corr{
+    width: 70px;
+    margin-left: 400px;
+    animation: zoomIn 1s infinite;
+}
+.num{
+    margin-top: 10px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+#num{
+    width: 70px;
+    animation: tada 2s infinite;
+    
+}
+@keyframes tada {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    10%,
+    20% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+  
+    40%,60%,
+    80% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  

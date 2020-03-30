@@ -1,0 +1,101 @@
+/*Importo las fuentes a utilizar*/
+@font-face{
+    font-family: f;
+    src: url(../fonts/snr.ttf);
+}
+@font-face{
+    font-family: b;
+    src: url(../fonts/snb.ttf);
+}
+.nab{
+    display:flex; 
+    justify-content: flex-end;
+    
+}
+/*Le quito el estilo a la lista*/
+.menu2{
+    display:flex; 
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 20px;
+    font-family: b;
+}
+.menu2 ul{
+    list-style: none;
+    
+}
+/*Pongo la lista en linea de bloque*/
+.menu2 ul li{
+    display: inline-block;
+    
+}
+/*Quito las decoraciones de los enlaces y lo pongo en bloque*/
+.menu2 ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #000000;
+}
+.menu2 ul li a:hover{
+    background: rgba(199,60,90,0.479);
+    transition: background-color .5s;
+}
+/*Fondo principal y gradiente para opacarlo*/
+.principal{
+    background: linear-gradient( rgba(255, 99, 71, 0.2),
+    rgba(255,99, 71, 0.2)), url(../images/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: 1900px 1400px;
+    background-position: center;
+    padding-bottom: 30%;
+    background-attachment: fixed;
+}
+/*Atributos del texto principal*/
+.texto{
+    width: 45%;
+    margin-left: 50%;
+    padding-top: 13%;
+    padding-left: 4%;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.t1{
+    display: flex;
+    width: 550px;
+    height: 45px;
+    color: #000000;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: b;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.t1 p{
+    margin: 0;
+}
+.t1 ul{
+    list-style: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    animation: pulse 1s infinite;
+}
+/*Animciones*/
+@keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }

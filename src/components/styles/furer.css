@@ -1,0 +1,26 @@
+/*Aquí hago el estilo del footer y dimensiones*/
+.futer{
+    background-color: black;
+    width: 100%;
+    box-sizing: border-box;
+}
+.futer{
+    display: flex;
+    padding-top: 5px;
+    align-content: center;
+    justify-content: center;  
+    padding-bottom: 5px;
+}
+/*Dimensiones de los logos*/
+.feis{
+	width: 60px;
+	padding-right: 20px;
+}
+.tuita{
+	width: 40px;
+	
+}
+.insta{
+    width: 60px;
+    padding-right: 20px;
+}

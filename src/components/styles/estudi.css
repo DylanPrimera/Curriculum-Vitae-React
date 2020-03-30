@@ -1,0 +1,41 @@
+/*Importo las fuentes a utilizar*/
+@font-face{
+    font-family: f;
+    src: url(../fonts/snr.ttf);
+}
+/*Atributos para contenido principal*/
+.estudi{
+    font-family: f;
+    flex: 100%;
+    display: flex;  
+    margin: 1rem 1rem 4rem;
+    -webkit-box-shadow: -1px 1px 14px -1px rgba(255, 0, 0, 0.2);
+    -moz-box-shadow: -1px 1px 14px -1px rgba(231, 12, 12, 0.2);
+    box-shadow: -1px 1px 14px -1px rgba(231, 12, 12, 0.2);
+    
+}
+
+.estudi h1{
+    font-weight: 800;
+    font-size: 40px;
+}
+.estudi p{
+    padding-top: 2%;
+    font-size: 20px;
+}
+/*Atributos para los texto de la parte de estudio*/
+
+#t1{
+    margin: 5%;
+    padding-top: 1%;
+}
+#t2{
+    padding-bottom: 1%;
+    padding-top: 4%;
+
+}
+#t3{
+    margin: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

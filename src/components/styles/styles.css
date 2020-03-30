@@ -1,0 +1,375 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;  
+    box-sizing: border-box; 
+}
+/*Diseño de la barra de scroll*/
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+  body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #dfdfdf;
+    border-radius: 10px;
+  }
+header{
+    width: 100%;
+}
+/*Importo las fuentes a utilizar*/
+@font-face{
+    font-family: f;
+    src: url(../fonts/snr.ttf);
+}
+@font-face{
+    font-family: b;
+    src: url(../fonts/snb.ttf);
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+header label:hover{
+    cursor: pointer;
+}
+.nab{
+    display:flex; 
+    justify-content: flex-end;
+    
+}
+/*Le quito el estilo a la lista*/
+.menu{
+    display:flex; 
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 20px;
+    font-family: b;
+}
+.menu ul{
+    list-style: none;
+    
+}
+/*Pongo la lista en linea de bloque*/
+.menu ul li{
+    display: inline-block;
+    
+}
+/*Quito las decoraciones de los enlaces y lo pongo en bloque*/
+.menu ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #000000;
+}
+.menu ul li a:hover{
+    background: rgba(199,60,90,0.479);
+    transition: background-color .5s;
+}
+/*Fondo principal y gradiente para opacarlo*/
+.principal{
+    background: linear-gradient( rgba(255, 99, 71, 0.2),
+    rgba(255,99, 71, 0.2)), url(../images/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: 1900px 1400px;
+    background-position: center;
+    padding-bottom: 30%;
+    background-attachment: fixed;
+}
+/*Atributos del texto principal*/
+.texto{
+    width: 45%;
+    margin-left: 50%;
+    padding-top: 13%;
+    padding-left: 4%;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.t1{
+    display: flex;
+    width: 550px;
+    height: 45px;
+    color: #000000;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: b;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.t1 p{
+    margin: 0;
+}
+.t1 ul{
+    list-style: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    animation: cambiar 7s infinite;
+
+}
+.boton{
+    font-family: b;
+    margin-top: 50px;
+}
+/*Parte en la que hago el botón*/
+.boton a{
+    text-decoration: none;
+    text-decoration:none;
+    color: #000000;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:30px;
+    padding-right:30px;
+    background-color: transparent;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #000000;
+}
+.boton a:hover{
+    background: rgba(199,60,90,0.479);
+    transition: background-color .5s;
+}
+/*Atributos para contenido principal*/
+.estudi{
+    font-family: 'Conv_Lucida Sans', sans-serif;
+    flex: 100%;
+    display: flex;  
+    margin: 1rem 1rem 4rem;
+    -webkit-box-shadow: -1px 1px 14px -1px rgba(255, 0, 0, 0.2);
+    -moz-box-shadow: -1px 1px 14px -1px rgba(231, 12, 12, 0.2);
+    box-shadow: -1px 1px 14px -1px rgba(231, 12, 12, 0.2);
+    
+}
+
+.estudi h1{
+    font-weight: 700;
+    font-size: 30px;
+}
+.estudi p{
+    padding-top: 2%;
+}
+/*Atributos para los texto de la parte de estudio*/
+
+#t1{
+    margin: 5%;
+    padding-top: 1%;
+}
+#t2{
+    padding-bottom: 1%;
+    padding-top: 4%;
+
+}
+#t3{
+    margin: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.experiencia{
+    font-family: 'Conv_Lucida Sans', sans-serif;
+    flex: 100%;
+    display: flex;  
+    margin: 1rem 1rem 4rem;
+    -webkit-box-shadow: -1px 1px 14px -1px rgba(255, 0, 0, 0.2);
+    -moz-box-shadow: -1px 1px 14px -1px rgba(231, 12, 12, 0.2);
+    box-shadow: -1px 1px 14px -1px rgba(231, 12, 12, 0.2);
+}
+/*Atributos para la primera tarjeta*/
+.labo{
+    margin-top: 10%;
+    padding: 10px;
+    font-size: 17px;
+    align-items: center;
+    text-align: center;
+    
+}
+.labo h1{
+    font-weight: 700;
+}
+.labo p{
+    padding-top: 2%;
+}
+
+.progra{
+    margin-right: 10px;
+    padding-top: 2%;
+}
+.progra h1{
+    font-weight: 700;
+}
+/*Dimensiones para los iconos*/
+.cmas{
+    margin-top: 10px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+#cmas{
+    width: 70px;
+    margin-right: 10px;
+}
+.cmas p{
+    margin-left: 2px;
+}
+.pyt{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pyt p{
+    margin-left: 10px;
+}
+#pyt{
+    width: 70px;
+    margin-right: 5px;
+}
+.jav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.jav p{
+    margin-left: 5px;
+}
+#jav{
+    width: 70px;
+}
+/*Atributos para el texto principal*/
+.contacto{
+
+    font-size: 17px;
+    font-family: 'Conv_Lucida Sans', sans-serif;
+    flex: 100%;
+    display: flex;  
+    margin: 1rem 1rem 4rem;
+    -webkit-box-shadow: -1px 1px 14px -1px rgba(255, 0, 0, 0.2);
+    -moz-box-shadow: -1px 1px 14px -1px rgba(231, 12, 12, 0.2);
+    box-shadow: -1px 1px 14px -1px rgba(231, 12, 12, 0.2);
+    
+}
+/*Dimensiones para los iconos*/
+.corr{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.corr p{
+    margin-left: 5px;
+}
+#corr{
+    width: 70px;
+    margin-left: 400px;
+}
+.num{
+    margin-top: 10px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+#num{
+    width: 70px;
+    
+}
+/*Aquí hago el estilo del footer y dimensiones*/
+.futer{
+    background-color: black;
+    width: 100%;
+    box-sizing: border-box;
+}
+.futer{
+    display: flex;
+    padding-top: 10px;
+    align-content: center;
+    justify-content: center;  
+}
+/*Dimensiones de los logos*/
+.feis{
+	width: 60px;
+	padding-right: 20px;
+}
+.tuita{
+	width: 40px;
+	
+}
+.insta{
+    width: 60px;
+    padding-right: 20px;
+}
+/*Animciones*/
+@keyframes cambiar{
+    0%{
+        margin-top: 0;
+    }
+    20%{
+        margin-top: 0;
+    }
+    25%{
+        margin-top: -40px;
+    }
+    50%{
+        margin-top: -43px;
+    }
+    55%{
+        margin-top: 0px;
+    }
+ 
+}

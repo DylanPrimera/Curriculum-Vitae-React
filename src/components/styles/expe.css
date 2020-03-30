@@ -1,0 +1,86 @@
+/*Importo las fuentes a utilizar*/
+@font-face{
+    font-family: f;
+    src: url(../fonts/snr.ttf);
+}
+@font-face{
+    font-family: b;
+    src: url(../fonts/snb.ttf);
+}
+.experiencia{
+    font-family: f;
+    flex: 100%;
+    display: flex;  
+    margin: 1rem 1rem 4rem;
+    -webkit-box-shadow: -1px 1px 14px -1px rgba(255, 0, 0, 0.2);
+    -moz-box-shadow: -1px 1px 14px -1px rgba(231, 12, 12, 0.2);
+    box-shadow: -1px 1px 14px -1px rgba(231, 12, 12, 0.2);
+}
+/*Atributos para la primera tarjeta*/
+.labo{
+    margin-top: 10%;
+    padding: 10px;
+    font-size: 17px;
+    align-items: center;
+    text-align: center;
+    
+}
+.labo h1{
+    font-weight: 800;
+}
+.labo p{
+    padding-top: 2%;
+    font-size: 20px;
+}
+
+.progra{
+    margin-right: 10px;
+    padding-top: 2%;
+}
+.progra h1{
+    font-weight: 700;
+}
+/*Dimensiones para los iconos*/
+.cmas{
+    margin-top: 10px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+#cmas{
+    width: 70px;
+    margin-right: 10px;
+}
+.cmas p{
+    margin-left: 2px;
+    font-size: 20px;
+}
+.pyt{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pyt p{
+    margin-left: 10px;
+    font-size: 20px;
+}
+#pyt{
+    width: 70px;
+    margin-right: 5px;
+}
+.jav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.jav p{
+    margin-left: 5px;
+    font-size: 20px;
+}
+#jav{
+    width: 70px;
+}
